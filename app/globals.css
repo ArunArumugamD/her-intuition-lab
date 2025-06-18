@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+body {
+  background-color: #591A31;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(ellipse at top, rgba(89, 26, 49, 0.8), #591A31),
+    radial-gradient(ellipse at bottom, #591A31, rgba(30, 10, 20, 0.9));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header Styles - EXACT match */
+.heading-primary {
+  text-transform: uppercase;
+  color: #F2C188;
+  font-family: 'Sedan', serif;
+  letter-spacing: 0.325rem;
+  font-size: 2.125rem;
+  line-height: 1.375;
+  font-weight: 400;
+  text-align: center;
+  width: calc(100% + 0.325rem);
+  margin-left: -0.1625rem;
+}
+
+/* Body text - FIXED left-aligned 1.375rem */
+.body-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.375rem; /* 22px */
+  line-height: 1.7;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+  text-align: left;
+}
+
+/* Navigation Container */
+.navigation-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* Navigation Button Style - EXACT from inspector */
+.nav-button {
+  display: inline-block;
+  width: 10.125rem;
+  height: 2.625rem;
+  line-height: calc(2.625rem - 2px);
+  padding: 0 0.5rem;
+  padding-left: calc(0.075rem + 0.5rem);
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.075rem;
+  font-size: 0.875em;
+  font-weight: 400;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(242, 193, 136, 0.3);
+  color: rgba(255, 255, 255, 0.9);
+  background-color: transparent;
+  text-align: center;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.nav-button:hover {
+  background-color: rgba(242, 193, 136, 0.05);
+  border-color: rgba(242, 193, 136, 0.5);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Underlined Link Style */
+.underline-link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #F2C188;
+  text-decoration-thickness: 1px;
+  transition: all 0.3s;
+  color: #F2C188;
+  font-size: 1rem;
+}
+
+.underline-link:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Footer text */
+.footer-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+/* Spacing utilities */
+.space-y-6 > * + * {
+  margin-top: 1.5rem;
+}
+
+/* Mobile Responsive - 2x2 grid with exact button specs */
+@media (max-width: 640px) {
+  .navigation-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.625rem;
+    max-width: 100%;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+  }
+  
+  .nav-button {
+    width: 100%;
+    height: 2.625rem;
+    line-height: calc(2.625rem - 2px);
+    padding: 0 0.5rem;
+    padding-left: calc(0.075rem + 0.5rem);
+    font-size: 0.75rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.075rem;
+    border-radius: 0.375rem;
+    border-color: rgba(242, 193, 136, 0.3);
+  }
+  
+  .heading-primary {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+  }
+  
+  .body-text {
+    font-size: 1.125rem;
+    text-align: left; 
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 641px) and (max-width: 768px) {
+  .nav-button {
+    width: 9rem;
+    height: 2.625rem;
+    line-height: calc(2.625rem - 2px);
+    padding: 0 0.5rem;
+    padding-left: calc(0.075rem + 0.5rem);
+    font-size: 0.8125rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.075rem;
+    border-radius: 0.375rem;
+    border-color: rgba(242, 193, 136, 0.3);
+  }
+  
+  .body-text {
+    text-align: center; /* Center on tablet too */
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(89, 26, 49, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F2C188;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F2C188CC;
+}
