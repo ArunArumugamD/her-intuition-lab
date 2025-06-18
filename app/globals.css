@@ -214,3 +214,48 @@ body {
     font-size: 1.125rem;
   }
 }
+
+/* Social Icons */
+.social-icon {
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+}
+
+
+/* Contact Page Specific Styles */
+.contact-heading {
+  text-transform: uppercase;
+  color: #F2C188;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.325rem;
+  width: calc(100% + 0.325rem);
+  font-size: 2.375em;
+  line-height: 1.375;
+  font-weight: 400;
+  text-align: center;
+  margin-left: -0.1625rem;
+}
+
+.contact-body-text {
+  color: #FFFFFF;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.25em;
+  line-height: 1.625;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Mobile responsive for contact page */
+@media (max-width: 640px) {
+  .contact-heading {
+    font-size: 1.875rem;
+    letter-spacing: 0.2rem;
+  }
+  
+  .contact-body-text {
+    font-size: 1.125rem;
+  }
+}
