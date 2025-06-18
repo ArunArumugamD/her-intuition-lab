@@ -19,8 +19,8 @@ body {
 .heading-primary {
   text-transform: uppercase;
   color: #F2C188;
-  font-family: 'Sedan', serif;
-  letter-spacing: 0.325rem;
+  font-family: serif;
+  letter-spacing: 0.3rem;
   font-size: 2.125rem;
   line-height: 1.375;
   font-weight: 400;
@@ -32,7 +32,7 @@ body {
 /* Body text - FIXED left-aligned 1.375rem */
 .body-text {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.375rem; /* 22px */
+  font-size: 1.5rem; /* 22px */
   line-height: 1.7;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.95);
@@ -131,12 +131,12 @@ body {
   }
   
   .heading-primary {
-    font-size: 1.5rem;
-    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
   }
   
   .body-text {
-    font-size: 1.125rem;
+    font-size: 1.375rem;
     text-align: left; 
   }
 }
@@ -158,7 +158,7 @@ body {
   }
   
   .body-text {
-    text-align: center; /* Center on tablet too */
+    text-align: left; /* Center on tablet too */
   }
 }
 
@@ -178,4 +178,39 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #F2C188CC;
+}
+
+/* About Page Specific Styles */
+.about-heading {
+  text-transform: uppercase;
+  color: #F2C188;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.325rem;
+  width: calc(100% + 0.325rem);
+  font-size: 2.875em;
+  line-height: 1.375;
+  font-weight: 400;
+  text-align: center;
+  margin-left: -0.1625rem;
+}
+
+.about-body-text {
+  color: #FFFFFF;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.25em;
+  line-height: 1.625;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Mobile responsive for about page */
+@media (max-width: 640px) {
+  .about-heading {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+  
+  .about-body-text {
+    font-size: 1.125rem;
+  }
 }
