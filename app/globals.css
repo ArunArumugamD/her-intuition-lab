@@ -197,7 +197,7 @@ body {
 .about-body-text {
   color: #FFFFFF;
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.25em;
+  font-size: 1.3em;
   line-height: 1.625;
   font-weight: 400;
   text-align: center;
@@ -242,7 +242,7 @@ body {
 .contact-body-text {
   color: #FFFFFF;
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.25em;
+  font-size: 1.3em;
   line-height: 1.625;
   font-weight: 400;
   text-align: center;
@@ -257,5 +257,123 @@ body {
   
   .contact-body-text {
     font-size: 1.125rem;
+  }
+}
+
+
+/* Sessions Page Specific Styles */
+.sessions-heading {
+  text-transform: uppercase;
+  color: #F2C188;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.325rem;
+  width: calc(100% + 0.325rem);
+  font-size: 2.875em;
+  line-height: 1.375;
+  font-weight: 400;
+  text-align: center;
+  margin-left: -0.1625rem;
+}
+
+.sessions-body-text {
+  color: #EEE1F0;
+  font-family: 'Karma', serif;
+  font-size: 1.25em;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+.session-subtitle {
+  text-transform: uppercase;
+  color: #F2C188;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.325rem;
+  font-size: 1.5em;
+  line-height: 1.375;
+  font-weight: 400;
+  padding-left: 0.325rem;
+}
+
+/* NEW - Session tagline */
+.session-tagline {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'Karma', serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  opacity: 0.9;
+  padding-left: 0.325rem;
+}
+
+/* NEW - Session details (duration/price) */
+.session-details {
+  text-transform: uppercase;
+  color: rgb(242 193 136 / 0.7);
+  font-family: 'Karma', serif;
+  letter-spacing: 0.325rem;
+  width: calc(100% + 0.325rem);
+  font-size: 0.875em;
+  line-height: 1.375;
+  font-weight: 400;
+}
+
+.sessions-subtext {
+  color: #FFFFFF;
+  font-family: 'Karma', serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.9;
+}
+
+/* Session card stays the same */
+.session-card {
+  background: rgba(89, 26, 49, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(242, 193, 136, 0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s;
+}
+
+.session-card:hover {
+  background: rgba(89, 26, 49, 0.4);
+  border-color: rgba(242, 193, 136, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Mobile responsive for sessions page */
+@media (max-width: 640px) {
+  .sessions-heading {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+  
+  .session-subtitle {
+    font-size: 1.25rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .sessions-subtext{
+    font-size: 0.875em;
+  }
+  
+  .session-tagline {
+    font-size: 1rem;
+  }
+  
+  .session-details {
+    font-size: 0.875rem;
+    letter-spacing: 0.2rem;
+  }
+  
+  .sessions-body-text {
+    font-size: 1.125rem;
+  }
+  
+  .session-card {
+    padding: 1.5rem;
   }
 }
