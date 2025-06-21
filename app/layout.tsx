@@ -23,7 +23,11 @@ export default function RootLayout({
         <link 
   href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500&family=Sedan:ital@0;1&display=swap" 
   rel="stylesheet" 
-/>
+        />
+        <link 
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Karma:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500&family=Sedan:ital@0;1&display=swap" 
+  rel="stylesheet" 
+        />
       </head>
       <body>{children}</body>
     </html>

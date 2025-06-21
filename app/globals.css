@@ -377,3 +377,186 @@ body {
     padding: 1.5rem;
   }
 }
+
+/* Interest Form Specific Styles */
+.form-heading {
+  text-transform: uppercase;
+  color: #F2C188;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.325rem;
+  font-size: 2.875em;
+  line-height: 1.375;
+  font-weight: 400;
+  text-align: center;
+}
+
+.form-body-text {
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.625;
+  font-weight: 400;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Form Styles with mobile padding */
+.form-section {
+  background: rgba(89, 26, 49, 0.2);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(242, 193, 136, 0.1);
+}
+
+.form-label label span {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+/* Mobile form section padding */
+@media (max-width: 640px) {
+  .form-section {
+    padding: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .form-heading {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.form-label {
+  display: block;
+  color: #F2C188;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+
+.form-input,
+.form-textarea,
+.form-select {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(242, 193, 136, 0.3);
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s;
+  margin-top: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  outline: none;
+  border-color: #F2C188;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Consistent Radio and Checkbox Styles */
+.form-radio,
+.form-checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  accent-color: #F2C188;
+  cursor: pointer;
+  margin-top: 0.125rem;
+}
+
+/* Custom checkbox styling for consistency */
+.form-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(242, 193, 136, 0.5);
+  border-radius: 0.25rem;
+  display: inline-block;
+  position: relative;
+}
+
+.form-checkbox:checked {
+  background: #F2C188;
+  border-color: #F2C188;
+}
+
+.form-checkbox:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #591A31;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+/* Custom radio styling for consistency */
+.form-radio {
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(242, 193, 136, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.form-radio:checked {
+  border-color: #F2C188;
+}
+
+.form-radio:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.625rem;
+  height: 0.625rem;
+  background: #F2C188;
+  border-radius: 50%;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Fix select dropdown on mobile */
+.form-select {
+  background-color: rgba(89, 26, 49, 0.9);
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F2C188' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+}
+
+.form-select option {
+  background: #591A31;
+  color: white;
+  padding: 0.5rem;
+}
+
+/* Mobile select fix */
+@media (max-width: 640px) {
+  .form-select {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
