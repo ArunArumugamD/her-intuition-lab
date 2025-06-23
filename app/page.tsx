@@ -3,6 +3,7 @@ import Container from '@/components/Container';
 import Logo from '@/components/Logo';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import HDGenerator from '@/components/HDGenerator';
 import Link from 'next/link';
 
 export default function Home() {
@@ -86,6 +87,17 @@ export default function Home() {
               Discover the 5 Potent 1:1 Session Pathways engineered to get you there. It&apos;s time 
               to seize your authentic power and dominate your life.
             </p>
+          </div>
+
+                    <div className="my-16 py-12 border-t border-b border-cream/20">
+            <h2 className="text-4xl md:text-5xl font-medium text-cream text-center mb-8 px-4" style={{ fontFamily: " 'Cormorant Garamond', serif", fontWeight:500 }}>
+              Discover Your Unique Design
+            </h2>
+            <p className="text-center text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-8 px-4" style={{ fontFamily: "'Quicksand', sans-serif" }} >
+              Human Design reveals your energetic blueprint - showing you how to make decisions, 
+              work with your energy, and live in alignment with your true nature.
+            </p>
+            <HDGenerator />
           </div>
 
           <div className="text-center mt-10 mb-12">
